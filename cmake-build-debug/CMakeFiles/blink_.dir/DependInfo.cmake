@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/josh/CLionProjects/Blink/main.c" "/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles/blink_.dir/main.c.o"
+  "/home/josh/CLionProjects/Blink/adder.c" "/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles/blink_.dir/adder.c.o"
+  "/home/josh/CLionProjects/Blink/c_main.c" "/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles/blink_.dir/c_main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -57,41 +57,67 @@ include CMakeFiles/blink_.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/blink_.dir/flags.make
 
-CMakeFiles/blink_.dir/main.c.o: CMakeFiles/blink_.dir/flags.make
-CMakeFiles/blink_.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blink_.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink_.dir/main.c.o   -c /home/josh/CLionProjects/Blink/main.c
+CMakeFiles/blink_.dir/c_main.c.o: CMakeFiles/blink_.dir/flags.make
+CMakeFiles/blink_.dir/c_main.c.o: ../c_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blink_.dir/c_main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink_.dir/c_main.c.o   -c /home/josh/CLionProjects/Blink/c_main.c
 
-CMakeFiles/blink_.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink_.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/josh/CLionProjects/Blink/main.c > CMakeFiles/blink_.dir/main.c.i
+CMakeFiles/blink_.dir/c_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink_.dir/c_main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/josh/CLionProjects/Blink/c_main.c > CMakeFiles/blink_.dir/c_main.c.i
 
-CMakeFiles/blink_.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink_.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/josh/CLionProjects/Blink/main.c -o CMakeFiles/blink_.dir/main.c.s
+CMakeFiles/blink_.dir/c_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink_.dir/c_main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/josh/CLionProjects/Blink/c_main.c -o CMakeFiles/blink_.dir/c_main.c.s
 
-CMakeFiles/blink_.dir/main.c.o.requires:
+CMakeFiles/blink_.dir/c_main.c.o.requires:
 
-.PHONY : CMakeFiles/blink_.dir/main.c.o.requires
+.PHONY : CMakeFiles/blink_.dir/c_main.c.o.requires
 
-CMakeFiles/blink_.dir/main.c.o.provides: CMakeFiles/blink_.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/blink_.dir/main.c.o.provides
+CMakeFiles/blink_.dir/c_main.c.o.provides: CMakeFiles/blink_.dir/c_main.c.o.requires
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/c_main.c.o.provides.build
+.PHONY : CMakeFiles/blink_.dir/c_main.c.o.provides
 
-CMakeFiles/blink_.dir/main.c.o.provides.build: CMakeFiles/blink_.dir/main.c.o
+CMakeFiles/blink_.dir/c_main.c.o.provides.build: CMakeFiles/blink_.dir/c_main.c.o
+
+
+CMakeFiles/blink_.dir/adder.c.o: CMakeFiles/blink_.dir/flags.make
+CMakeFiles/blink_.dir/adder.c.o: ../adder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blink_.dir/adder.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/blink_.dir/adder.c.o   -c /home/josh/CLionProjects/Blink/adder.c
+
+CMakeFiles/blink_.dir/adder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blink_.dir/adder.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/josh/CLionProjects/Blink/adder.c > CMakeFiles/blink_.dir/adder.c.i
+
+CMakeFiles/blink_.dir/adder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blink_.dir/adder.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/josh/CLionProjects/Blink/adder.c -o CMakeFiles/blink_.dir/adder.c.s
+
+CMakeFiles/blink_.dir/adder.c.o.requires:
+
+.PHONY : CMakeFiles/blink_.dir/adder.c.o.requires
+
+CMakeFiles/blink_.dir/adder.c.o.provides: CMakeFiles/blink_.dir/adder.c.o.requires
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/adder.c.o.provides.build
+.PHONY : CMakeFiles/blink_.dir/adder.c.o.provides
+
+CMakeFiles/blink_.dir/adder.c.o.provides.build: CMakeFiles/blink_.dir/adder.c.o
 
 
 # Object files for target blink_
 blink__OBJECTS = \
-"CMakeFiles/blink_.dir/main.c.o"
+"CMakeFiles/blink_.dir/c_main.c.o" \
+"CMakeFiles/blink_.dir/adder.c.o"
 
 # External object files for target blink_
 blink__EXTERNAL_OBJECTS =
 
-blink_: CMakeFiles/blink_.dir/main.c.o
+blink_: CMakeFiles/blink_.dir/c_main.c.o
+blink_: CMakeFiles/blink_.dir/adder.c.o
 blink_: CMakeFiles/blink_.dir/build.make
 blink_: CMakeFiles/blink_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable blink_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josh/CLionProjects/Blink/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable blink_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blink_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +125,8 @@ CMakeFiles/blink_.dir/build: blink_
 
 .PHONY : CMakeFiles/blink_.dir/build
 
-CMakeFiles/blink_.dir/requires: CMakeFiles/blink_.dir/main.c.o.requires
+CMakeFiles/blink_.dir/requires: CMakeFiles/blink_.dir/c_main.c.o.requires
+CMakeFiles/blink_.dir/requires: CMakeFiles/blink_.dir/adder.c.o.requires
 
 .PHONY : CMakeFiles/blink_.dir/requires
 

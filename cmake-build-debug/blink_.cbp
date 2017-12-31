@@ -80,7 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/josh/CLionProjects/Blink/main.c">
+		<Unit filename="/home/josh/CLionProjects/Blink/adder.c">
+			<Option target="blink_"/>
+		</Unit>
+		<Unit filename="/home/josh/CLionProjects/Blink/c_main.c">
 			<Option target="blink_"/>
 		</Unit>
 		<Unit filename="/home/josh/CLionProjects/Blink/CMakeLists.txt">

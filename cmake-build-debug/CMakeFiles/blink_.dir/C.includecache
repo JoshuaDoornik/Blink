@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/josh/CLionProjects/Blink/main.c
+/home/josh/CLionProjects/Blink/c_main.c
 stdio.h
 -
 Python.h

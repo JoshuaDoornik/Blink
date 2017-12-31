@@ -123,32 +123,59 @@ blink_/fast:
 	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/build
 .PHONY : blink_/fast
 
-main.o: main.c.o
+adder.o: adder.c.o
 
-.PHONY : main.o
+.PHONY : adder.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/main.c.o
-.PHONY : main.c.o
+adder.c.o:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/adder.c.o
+.PHONY : adder.c.o
 
-main.i: main.c.i
+adder.i: adder.c.i
 
-.PHONY : main.i
+.PHONY : adder.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/main.c.i
-.PHONY : main.c.i
+adder.c.i:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/adder.c.i
+.PHONY : adder.c.i
 
-main.s: main.c.s
+adder.s: adder.c.s
 
-.PHONY : main.s
+.PHONY : adder.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/main.c.s
-.PHONY : main.c.s
+adder.c.s:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/adder.c.s
+.PHONY : adder.c.s
+
+c_main.o: c_main.c.o
+
+.PHONY : c_main.o
+
+# target to build an object file
+c_main.c.o:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/c_main.c.o
+.PHONY : c_main.c.o
+
+c_main.i: c_main.c.i
+
+.PHONY : c_main.i
+
+# target to preprocess a source file
+c_main.c.i:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/c_main.c.i
+.PHONY : c_main.c.i
+
+c_main.s: c_main.c.s
+
+.PHONY : c_main.s
+
+# target to generate assembly for a file
+c_main.c.s:
+	$(MAKE) -f CMakeFiles/blink_.dir/build.make CMakeFiles/blink_.dir/c_main.c.s
+.PHONY : c_main.c.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... blink_"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... adder.o"
+	@echo "... adder.i"
+	@echo "... adder.s"
+	@echo "... c_main.o"
+	@echo "... c_main.i"
+	@echo "... c_main.s"
 .PHONY : help
 
 
