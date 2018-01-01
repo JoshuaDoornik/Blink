@@ -86,6 +86,9 @@
 		<Unit filename="/home/josh/CLionProjects/Blink/c_main.c">
 			<Option target="blink_"/>
 		</Unit>
+		<Unit filename="/home/josh/CLionProjects/Blink/map.cpp">
+			<Option target="blink_"/>
+		</Unit>
 		<Unit filename="/home/josh/CLionProjects/Blink/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
