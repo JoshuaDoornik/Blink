@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/josh/CLionProjects/Blink/c_main.c
-stdio.h
+/home/josh/CLionProjects/Blink/adder.c
+Python.h
 -
+
+/home/josh/CLionProjects/Blink/c_main.c
 Python.h
 -
 
