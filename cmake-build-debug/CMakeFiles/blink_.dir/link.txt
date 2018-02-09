@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/blink_.dir/c_main.c.o CMakeFiles/blink_.dir/adder.c.o  -o blink_ 
