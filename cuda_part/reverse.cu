@@ -3,7 +3,6 @@
 
 __global__
 void swap(int *a,int size){
-    //int size = 255;
     int i = blockIdx.x*blockDim.x + threadIdx.x;
     int temp = a[i];
     a[i] = a[size-i];
@@ -11,7 +10,7 @@ void swap(int *a,int size){
 }
 
 int main(void){
-    int size = 10;
+    int size = 100;
     int blocks = size/256 + 1;
     int threads= (size >= 256) ? 256 : size; 
     int *x, *d_x;
@@ -20,15 +19,14 @@ int main(void){
     
     for(int i = 0; i < size; i++){
         x[i] = i;
-}
-    
+   }
+    printf("%d \n",blocks);    
     cudaMemcpy(d_x, x, size*sizeof(int),cudaMemcpyHostToDevice);
-    swap<<<size,blocks>>>(d_x,size);
-    cudaMemcpy(x,d_x, size*sizeof(int), cudaMemcpyDeviceToHost);
-
+    swap<<<blocks,threads>>>(d_x,size-1);
+    cudaMemcpy(x,d_x, size*sizeof(int), cudaMemcpyDeviceToHost); 
     for(int i = 0; i < size; i++){
         printf(" element %d = %d\n", i, x[i]);
-}
+    }
     cudaFree(d_x);
     free(x);
 }
