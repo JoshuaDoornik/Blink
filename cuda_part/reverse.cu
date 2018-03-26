@@ -12,8 +12,7 @@ static PyMethodDef addList_funcs[] = {
     {NULL, NULL, 0, NULL}
 };
 //doc string, to add documentation to our method
-static char reverseList_docs[] =
-        "reverse the list\n";
+static char reverseList_docs[] ="reverse the list\n";
 
 PyMODINIT_FUNC initaddList(void){
     Py_InitModule3("cuda_reverser", addList_funcs,
