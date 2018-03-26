@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <python.h>
 
 //python boiler plate. define methods with extern "C" so the compiler doesnt prank us.
@@ -17,8 +16,8 @@ static char reverseList_docs[] =
         "reverse the list\n";
 
 PyMODINIT_FUNC initaddList(void){
-    Py_InitModule3("cuda_adder", addList_funcs,
-                   "Add all ze lists");
+    Py_InitModule3("cuda_reverser", addList_funcs,
+                   "reverse the list");
 }
 
 __global__
@@ -34,7 +33,7 @@ PyObject * access_swap(PyObject *self, PyObject *args){
     if (!PyArg_ParseTuple(args, "O!", &PyListObject, &to_swap)){  
         return NULL;
     }  
-    
+
     int size = PyList_Size(&to_swap);
     int blocks = size/256 + 1;
     int threads= (size >= 256) ? 256 : size; 
