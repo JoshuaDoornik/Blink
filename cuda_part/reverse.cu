@@ -33,7 +33,7 @@ PyObject * access_swap(PyObject *self, PyObject *args){
     PyListObject *to_swap;
     if (!PyArg_ParseTuple(args, "O!", &PyListObject, &to_swap)){  
         return NULL;
-    }   
+    }  
     
     int size = PyList_Size(&to_swap);
     int blocks = size/256 + 1;
