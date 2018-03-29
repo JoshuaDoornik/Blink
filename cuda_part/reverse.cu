@@ -1,4 +1,4 @@
-#include <python.h>
+#include <Python.h>
 
 //python boiler plate. define methods with extern "C" so the compiler doesnt prank us.
 extern "C" static PyObject *access_swap(PyObject *self, PyObject *args);
