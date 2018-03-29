@@ -1,7 +1,0 @@
-PYTHON_DIR = /Library/Frameworks/Python.framework/Versions/Current
- 
-
-# ---- Cuda compile ------------------
-reverse.o:  reverse.cu
-      nvcc  -c -m32 reverse.cu -O3 -ccbin clang-3.8
-            -I$(PYTHON_DIR)/include/python2.7
