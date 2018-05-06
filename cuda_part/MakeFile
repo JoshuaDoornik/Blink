@@ -1,9 +1,0 @@
-INC_DIR = /usr/include/python2.7/
-# ---- Link ---------------------------
-BlinkFunctions.so:  BlinkFunctions.o
-	gcc -bundle -m32 -flat_namespace -undefined suppress 
-		-o reverse.so  reverse.o -L/usr/local/cuda/lib -lcudart
-# ---- Cuda compile ------------------
-BlinkFunctions.o:  BlinkFunctions.cu
-	nvcc  -c -m32 reverse.cu -O3 -ccbin clang-3.8
-		-I /usr/include/python2.7/
