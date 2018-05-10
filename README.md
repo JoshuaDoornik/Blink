@@ -9,5 +9,6 @@ nvcc
 C/C++ compiler compatible with CUDA\n  
 python 2.7  
 patience  
-stuff defined in requirements.txt
+stuff defined in requirements.txt  
 be sure to set $CUDAHOME  
+ 
